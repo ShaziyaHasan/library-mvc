@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('git') {
       steps {
-        git credentialsId:'library-credentials', url:'https://github.com/ShaziyaHasan/library-mvc'
+        git credentialsId:'library-credentials', url:'https://github.com/ShaziyaHasan.git'
       }
     }
     stage('build') {

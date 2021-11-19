@@ -5,7 +5,7 @@ pipeline {
     jdk 'Jdk-8'
   }
   stages {
-    stage{'git'} {
+    stage('git') {
       steps {
         git credentialsId:'library-credentials', url:'https://github.com/ShaziyaHasan/library-mvc.git'
       }

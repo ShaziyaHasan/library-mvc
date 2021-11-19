@@ -12,7 +12,9 @@ pipeline {
     }
     stage('build') {
       steps {
-        bat 'mvn -f library-mvc/pom.xml clean install'
+        dir("C:/ProgramData/Jenkins/.jenkins/workspace/Spring MVC") {
+                sh 'mvn -B -DskipTests clean package'
+              }
       }
     }
   }

@@ -12,7 +12,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        dir("C:\ProgramData\Jenkins\.jenkins\workspace\Spring MVC") {
+        dir("/var/lib/Jenkins/.jenkins/workspace/Spring MVC") {
                 sh 'mvn -B -DskipTests clean package'
               }
       }

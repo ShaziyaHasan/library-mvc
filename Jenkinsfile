@@ -12,7 +12,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        bat 'mvn -f library-mvc/blob/master/pom.xml clean install'
+        bat 'mvn --file library-mvc/pom.xml clean install'
       }
     }
   }

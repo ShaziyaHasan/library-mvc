@@ -34,6 +34,7 @@ public class PasswordHandlerService {
 	public String decryptPassword(String password) 
 			throws NoSuchAlgorithmException, NoSuchPaddingException {
 		
+		//key generated from encryptor
 		String key = "DADE709ADB6442A5CF6A02E113A6DF0A";
 		String decryptedPassword = null;
 
